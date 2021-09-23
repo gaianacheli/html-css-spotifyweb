@@ -10,12 +10,13 @@
     background-color: rgba(20, 25, 34, 1);
 }
 .header {
-    height: 50px;
     width: 80%;
     display: flex;
+    justify-content: flex-end;
     position: fixed;
     left: 288px;
     background-color:rgba(8, 11, 18, 1) ;
+    padding: 1.5rem;
 }
 .sidebar {
     height: 90%;
@@ -30,4 +31,15 @@
     position: fixed;
     top: 90%;
     background-color: rgba(40, 40, 40, 1);
+}
+
+/****header****/
+.upgrade {
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 7px 28px;
+    font-size: 14px;
 }
