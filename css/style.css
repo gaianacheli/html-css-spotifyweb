@@ -3,13 +3,12 @@
     margin: 0;
     padding: 0;
 }
+
 /****utili****/
-.body {
-    font-family: font-family: 'Montserrat', sans-serif;
-}
 .content{
     height: 100vh;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
     background-color: rgba(20, 25, 34, 1);
 }
 .header {
@@ -23,11 +22,12 @@
 }
 .sidebar {
     height: 90%;
-    width: 20%;
+    width: 15%;
     position: fixed;
     background-color: rgba(0, 0, 0, 1);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
 }
 .footer {
@@ -90,4 +90,27 @@
 }
 .crea {
     margin: auto;
+}
+.lista p {
+    color: rgba(113, 113, 113, 1) ;
+    margin-top: 1rem;
+}
+.fa-arrow-circle-down {
+    color: rgba(113, 113, 113, 1);
+}
+.divisorio{
+    display: block;
+    margin: 1rem;
+    width: 135px;
+}
+.profilo {
+    width: 15%;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 1);
+}
+.icon h1 {
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 1rem;
 }
