@@ -18,12 +18,14 @@ body{
     height: 80px;
     display: flex;
     justify-content: space-between;
+    padding: 00.5rem;
 
 }
 .no-footer{
     background-color: red;
     height: calc(100% - 80px);
     display: flex;
+    overflow: hidden;
 }
 .sidebar{
     background-color: rgba(0, 0, 0, 1);
@@ -47,7 +49,7 @@ body{
     align-items: center;
 }
 .main{
-    background-color: rgb(255, 0, 179);
+    background-color: rgba(20, 25, 34, 1);
     height: calc(100% - 100px);
     overflow-y: scroll;
 }
@@ -91,6 +93,7 @@ body{
 }
 .fa-arrow-circle-down {
     font-size: 15px;
+    color: white;
 }
 .profilo {
     width: 20px;
@@ -115,11 +118,77 @@ body{
 }
 
 /***footer***/
-
+/**left**/
 .left {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .left img {
     width: 50px;
+}
+.sinister{
+    margin-left: 10px;
+}
+.sinister h4 {
+    color: white;
+}
+.sinister p {
+color: rgba(94, 94, 94, 1);
+}
+.preferiti {
+    margin-left: 3rem;
+    color: rgba(89, 89, 89, 1);
+}
+/**center**/
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.down {
+    display: flex;
+    align-items: center;
+}
+.down p {
+    color: white;
+    font-size: 10px;
+    padding: 0rem 1rem;
+}
+.canzone {
+    background-color: rgba(90, 90, 90, 1);
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+}
+.volume {
+    background-color: white;
+    width: 50px;
+    height: 5px;
+    border: 20px;
+}
+.up {
+    display: flex;
+    justify-content: center;
+     margin: 5px;
+}
+.up i {
+    margin-left: 30px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+}
+/***right***/
+.right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.right i {
+    color: white;
+    margin-right: 1rem;
+}
+.audio{
+    height: 5px;
+    width: 100px;
+    background-color:rgba(90, 90, 90, 1) ;
 }
