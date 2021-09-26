@@ -6,6 +6,7 @@
 
 /****utili****/
 body{
+    font-family: 'Montserrat', sans-serif;;
     background-color: black;
 }
 .fullPage{
@@ -191,4 +192,25 @@ color: rgba(94, 94, 94, 1);
     height: 5px;
     width: 100px;
     background-color:rgba(90, 90, 90, 1) ;
+}
+
+/***main***/
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.scelte{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+.scelte ul {
+    list-style: none;
+    display: flex;
+    color: rgba(92, 94, 100, 1);
+    font-size: 15px;
+}
+.scelte li {
+    margin-right: 1rem;
 }
