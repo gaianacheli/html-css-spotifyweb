@@ -44,15 +44,16 @@ body{
 }
 .header{
     background-color: rgba(8, 11, 18, 1);
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 .main{
     background-color: rgba(20, 25, 34, 1);
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     overflow-y: scroll;
+    padding: 1rem;
 }
 
 /****sidebar****/
@@ -213,4 +214,57 @@ color: rgba(94, 94, 94, 1);
 }
 .scelte li {
     margin-right: 1rem;
+}
+.categoria h2 {
+    color: white;
+    margin-top: 3rem;
+    font-size: 23px;
+}
+.song {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+.song img {
+    width: 150px;
+}
+.song h5 {
+    color: white;
+    margin: 5px;
+}
+.song p {
+    color:rgba(94, 94, 94, 1) ;
+    font-size: 12px;
+}
+.play {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.categoria p {
+    color: rgba(94, 94, 94, 1);
+    font-size: 11px;
+    margin-top: 7px;
+}
+.suggeriti {
+    display: flex;
+    margin-top: 2rem;
+}
+.songround {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+.songround img {
+    width: 150px;
+    border-radius: 70px;
+}
+.songround h5 {
+    color: white;
+    margin: 5px;
 }
