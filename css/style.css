@@ -13,13 +13,17 @@ body{
     /* display: flex;
     flex-flow: column-reverse; */
     height: 100vh;
+    width: 100%;
+    overflow-x: auto;
 }
 .footer{
     background-color:rgba(40, 40, 40, 1);
     height: 80px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 00.5rem;
+    overflow-y: auto;
 
 }
 .no-footer{
@@ -166,13 +170,13 @@ body{
 .sinister p {
 color: rgba(94, 94, 94, 1);
 font-size: 12px;
-transition: 2s;
+transition: 1s;
 }
 .sinister p:hover {
     border-bottom: 1px solid white
 }
 .preferiti {
-    margin-left: 3rem;
+    margin-left: 1rem;
     color: rgba(89, 89, 89, 1);
     transition: 1s;
 }
@@ -278,17 +282,15 @@ transition: 2s;
 .scelte{
     display: flex;
     justify-content: center;
-    padding: 1rem;
-
 }
 .scelte ul {
     list-style: none;
     display: flex;
-    color: rgba(92, 94, 100, 1);
+    color: rgba(125, 127, 132, 1);
     font-size: 15px;
 }
 .green {
-    border-bottom: solid rgba(151, 223, 41, 1);
+    border-bottom: 1px solid rgba(151, 223, 41, 1);
 }
 .scelte li {
     margin-right: 1rem;
@@ -370,4 +372,48 @@ transition: 2s;
 }
 .songround:hover {
     opacity: 0.5;
+}
+@media screen and (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+    .footer {
+        width: 480px;
+    }
+    .icon p, .icon h4, .lista p, .icon h5, .icon h1, .playlist h3, .fa-plus-square, .divisorio{
+        display: none;
+    }
+    .sidebar {
+        width: 65px;
+    }
+    .no-sidebar {
+        width: calc(480px - 65px);
+    }
+    .play {
+        flex-wrap: wrap;
+    }
+    .left img {
+        width: 30px;
+    }
+    .sinister h4 {
+        font-size: 10px;
+    }
+    .sinister p {
+    font-size: 8px;
+    }
+    .canzone {
+        width: 150px;
+    }
+    .up i {
+        margin-left: 2rem;
+        font-size: 15px;
+    }
+    .right i {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .scelte li {
+        font-size: 7px;
+        flex-wrap: wrap;
+    }
 }
