@@ -380,6 +380,9 @@ transition: 1s;
     .footer {
         width: 480px;
     }
+    .no-sidebar {
+        width: calc(100% - 65px);
+    }
     .icon p, .icon h4, .lista p, .icon h5, .icon h1, .playlist h3, .fa-plus-square, .divisorio{
         display: none;
     }
@@ -415,5 +418,17 @@ transition: 1s;
     .scelte li {
         font-size: 7px;
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:1024px) {
+    body {
+        width: 1024px;
+    }
+    .footer{
+         width: 1024px;
+    }
+    .play {
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
