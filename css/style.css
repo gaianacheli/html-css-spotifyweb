@@ -179,7 +179,7 @@ transition: 1s;
     color: rgba(89, 89, 89, 1);
     transition: 1s;
 }
-.preferiti {
+.preferiti:hover {
     color: white;
 }
 /**center**/
