@@ -76,7 +76,6 @@ body{
 }
 .border {
     border-left: solid rgba(151, 223, 41, 1);
-    margin-left: -1rem;
 }
 .margin {
     margin-left: 1rem;
@@ -374,23 +373,18 @@ transition: 1s;
     opacity: 0.5;
 }
 @media screen and (max-width: 480px) {
-    body {
-        width: 480px;
-    }
-    .footer {
-        width: 480px;
-    }
-    .no-sidebar {
-        width: calc(100% - 65px);
-    }
+    
     .icon p, .icon h4, .lista p, .icon h5, .icon h1, .playlist h3, .fa-plus-square, .divisorio{
         display: none;
     }
     .sidebar {
-        width: 65px;
+        width: 55px;
+    }
+    .logo {
+        width: 75px;
     }
     .no-sidebar {
-        width: calc(480px - 65px);
+        width: calc(100% - 55px);
     }
     .play {
         flex-wrap: wrap;
@@ -415,18 +409,20 @@ transition: 1s;
         font-size: 10px;
         margin-right: 5px;
     }
+
     .scelte li {
         font-size: 7px;
         flex-wrap: wrap;
     }
+    .suggeriti {
+        flex-wrap: wrap;
+    }
+    .margin {
+        margin-left: 0px;
+    }
 }
 @media screen and (max-width:1024px) {
-    body {
-        width: 1024px;
-    }
-    .footer{
-         width: 1024px;
-    }
+    
     .play {
         flex-wrap: wrap;
         justify-content: flex-start;
